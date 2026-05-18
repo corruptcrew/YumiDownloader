@@ -1,0 +1,17 @@
+services:
+  - type: worker
+    name: yumi-downloader-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: DEPLOYER_NAME
+        sync: false
+      - key: DEPLOYER_USERNAME
+        sync: false
+      - key: SUPPORT_CHANNEL
+        sync: false
+      - key: UPDATE_CHANNEL
+        sync: false

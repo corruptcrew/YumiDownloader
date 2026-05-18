@@ -1,0 +1,15 @@
+{
+  "name": "Yumi Downloader Bot",
+  "description": "🌸 Your Ultimate Media Download Companion - Telegram Bot for Instagram, YouTube, TikTok & 1000+ platforms",
+  "keywords": ["telegram", "bot", "downloader", "instagram", "youtube", "tiktok", "video"],
+  "repository": "https://github.com/corruptcrew/YumiDownloader",
+  "env": {
+    "BOT_TOKEN": {"description": "Telegram Bot Token from @BotFather", "required": true},
+    "DEPLOYER_NAME": {"description": "Your name", "required": false, "value": "Your Name"},
+    "DEPLOYER_USERNAME": {"description": "Your Telegram username", "required": false, "value": "@YourUsername"},
+    "SUPPORT_CHANNEL": {"description": "Support group URL", "required": false, "value": "https://t.me/YourSupport"},
+    "UPDATE_CHANNEL": {"description": "Updates channel URL", "required": false, "value": "https://t.me/YourUpdates"}
+  },
+  "formation": {"worker": {"quantity": 1, "size": "free"}},
+  "buildpacks": [{"url": "heroku/python"}]
+}
